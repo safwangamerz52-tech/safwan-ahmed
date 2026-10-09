@@ -1,0 +1,109 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Page</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="main-container">
+        <!-- Registration Form Picture -->
+        <img src="./images.png" alt="">
+        
+        <!-- Registration Button -->
+        <button class="portal-btn" onclick="toggleForm('regFormDrawer')">Open Registration Form</button>
+
+        <!-- Line under button -->
+        <hr class="bottom-line">
+
+        <!-- Actual Registration Form (Hidden by default) -->
+        <div id="regFormDrawer" class="form-drawer">
+            <h2>Registration Form</h2>
+            <form onsubmit="event.preventDefault(); alert('Registration details captured!');">
+                <div class="input-row">
+                    <label>Full Name</label>
+                    <input type="text" placeholder="Enter your full name" required>
+                </div>
+                <div class="input-row">
+                    <label>Email Address</label>
+                    <input type="email" placeholder="Enter your email" required>
+                </div>
+                <div class="input-row">
+                    <label>Password</label>
+                    <input type="password" placeholder="Create a password" required>
+                </div>
+                <div class="input-row">
+                    <label>Address</label>
+                    <textarea rows="2" placeholder="Enter your address"></textarea>
+                </div>
+                <button type="submit" class="form-submit-btn">Submit Registration</button>
+            </form>
+        </div>
+    </div>
+
+    <script>
+        function toggleForm(formId) {
+            const formBox = document.getElementById(formId);
+            formBox.style.display = (formBox.style.display === "block") ? "none" : "block";
+        }
+    </script>
+
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="main-container">
+        <!-- Login Form Picture -->
+        <img src="./images.jfif" alt="">
+        
+        <!-- Login Button -->
+        <button class="portal-btn login-btn-color" onclick="toggleForm('loginFormDrawer')">Open Login Form</button>
+
+        <!-- Line under button -->
+        <hr class="bottom-line">
+
+        <!-- Actual Login Form (Hidden by default) -->
+        <div id="loginFormDrawer" class="form-drawer">
+            <h2>Login Form</h2>
+            <form onsubmit="event.preventDefault(); alert('Login details captured!');">
+                <div class="input-row">
+                    <label>Username / Email</label>
+                    <input type="text" placeholder="Enter your email" required>
+                </div>
+                <div class="input-row">
+                    <label>Password</label>
+                    <input type="password" placeholder="Enter your password" required>
+                </div>
+                <button type="submit" class="form-submit-btn" style="background-color: #ff3366;">Login Now</button>
+            </form>
+        </div>
+    </div>
+
+    <script>
+        function toggleForm(formId) {
+            const formBox = document.getElementById(formId);
+            formBox.style.display = (formBox.style.display === "block") ? "none" : "block";
+        }
+    </script>
+
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration & Login Portal</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
