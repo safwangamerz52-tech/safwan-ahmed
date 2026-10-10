@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cristian Muñoz - UI/UX Designer Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <!-- Ambient Background Glows -->
+  <div class="bg-glow glow-top-left"></div>
+  <div class="bg-glow glow-top-right"></div>
+  <div class="bg-glow glow-skills"></div>
+  <div class="bg-glow glow-portfolio"></div>
+
+  <!-- Header / Navigation -->
+  <header class="navbar-wrapper">
+    <nav class="navbar">
+      <div class="brand">
+        <span class="brand-avatar">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
+            <circle cx="12" cy="7" r="4"></circle>
+          </svg>
+        </span>
+        <span class="brand-name">Cristian Muñoz</span>
+      </div>
+      <div class="nav-links">
+        <a href="#home" class="active">Home</a>
+        <a href="#skills">Skills</a>
+        <a href="#about">About</a>
+        <a href="#portfolio">Portfolio</a>
+      </div>
+      <a href="#contact" class="btn-contact-nav">Contact Me</a>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <section id="home" class="hero-section">
+    <div class="hero-container">
+      <div class="hero-content">
+        <div class="wavy-decoration">
+          <svg width="36" height="18" viewBox="0 0 36 18" fill="none">
+            <path d="M2 16C6 8 10 2 18 10C26 18 30 2 34 10" stroke="#7C3AED" stroke-width="3" stroke-linecap="round"/>
+          </svg>
+        </div>
+
+        <h1 class="hero-title">
+          Hi, I am<br>
+          <span class="highlight-name">Cristian <span class="palette-emoji">🎨</span></span>
+        </h1>
+
+        <div class="bio-card">
+          <div class="bio-title">UI/UX Designer</div>
+          <p class="bio-text">
+            I am a UI/UX Designer. I like to make interfaces simple and aesthetically pleasing for users. The idea is not to create an interface for creating it, it is that users prefer you because your product is easy to use.
+          </p>
+        </div>
+
+        <div class="cta-wrapper">
+          <a href="#contact" class="btn-primary-cta">
+            <span>¡Contact Me!</span>
+            <div class="arrow-circle">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                <line x1="5" y1="12" x2="19" y2="12"></line>
+                <polyline points="12 5 19 12 12 19"></polyline>
+              </svg>
+            </div>
+          </a>
+        </div>
+      </div>
+
+      <!-- Hero Character Illustration -->
+      <div class="hero-illustration">
+        <div class="dots-grid dots-top-right"></div>
+        <div class="illustration-box">
+          <div class="ui-window window-back">
+            <div class="window-header">
+              <span class="dot dot-red"></span>
+              <span class="dot dot-yellow"></span>
+              <span class="dot dot-green"></span>
+            </div>
+            <div class="window-body">
+              <svg class="chart-line" viewBox="0 0 200 60">
+                <path d="M10,40 Q50,10 90,35 T180,15" fill="none" stroke="#F59E0B" stroke-width="4" stroke-linecap="round"/>
+                <circle cx="135" cy="22" r="5" fill="#EF4444"/>
+              </svg>
+            </div>
+          </div>
+
+          <div class="ui-window window-front">
+            <div class="window-header">
+              <div class="pill-yellow"></div>
+              <span class="close-btn">×</span>
+            </div>
+            <div class="window-body">
+              <div class="skeleton-line line-long"></div>
+              <div class="skeleton-line line-short"></div>
+            </div>
+          </div>
+
+          <div class="character-graphics">
+            <div class="desk"></div>
+            <div class="stool"></div>
+            <div class="plant plant-left"></div>
+            <div class="plant plant-right"></div>
+            <div class="character">
+              <div class="head"></div>
+              <div class="body-blue"></div>
+              <div class="legs-yellow"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills Section -->
+  <section id="skills" class="skills-section">
+    <div class="section-header">
+      <div class="skills-title-wrapper">
+        <svg class="skills-sparkle" width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="#7C3AED" stroke-width="2">
+          <path d="M12 2L15 9L22 12L15 15L12 22L9 15L2 12L9 9L12 2Z"/>
+        </svg>
+        <h2 class="skills-heading">Skills</h2>
+      </div>
+    </div>
+
+    <div class="skills-grid">
+      <!-- 1. Figma / Adobe XD -->
+      <div class="skill-card">
+        <div class="progress-ring-wrapper">
+          <svg class="progress-ring" viewBox="0 0 120 120">
+            <circle class="ring-bg" cx="60" cy="60" r="48"/>
+            <circle class="ring-fill" cx="60" cy="60" r="48" style="stroke-dashoffset: 30;"></circle>
+          </svg>
+          <span class="progress-value">90%</span>
+        </div>
+        <div class="skill-name">Figma /<br>Adobe XD</div>
+      </div>
+
+      <!-- 2. UI Design -->
+      <div class="skill-card">
+        <div class="progress-ring-wrapper">
+          <svg class="progress-ring" viewBox="0 0 120 120">
+            <circle class="ring-bg" cx="60" cy="60" r="48"/>
+            <circle class="ring-fill" cx="60" cy="60" r="48" style="stroke-dashoffset: 60;"></circle>
+          </svg>
+          <span class="progress-value">80%</span>
+        </div>
+        <div class="skill-name">UI Design</div>
+      </div>
+
+      <!-- 3. Information Architecture -->
+      <div class="skill-card">
+        <div class="progress-ring-wrapper">
+          <svg class="progress-ring" viewBox="0 0 120 120">
+            <circle class="ring-bg" cx="60" cy="60" r="48"/>
+            <circle class="ring-fill" cx="60" cy="60" r="48" style="stroke-dashoffset: 60;"></circle>
+          </svg>
+          <span class="progress-value">80%</span>
+        </div>
+        <div class="skill-name">Information<br>Architecture</div>
+      </div>
+
+      <!-- 4. UX Design -->
+      <div class="skill-card">
+        <div class="progress-ring-wrapper">
+          <svg class="progress-ring" viewBox="0 0 120 120">
+            <circle class="ring-bg" cx="60" cy="60" r="48"/>
+            <circle class="ring-fill" cx="60" cy="60" r="48" style="stroke-dashoffset: 90;"></circle>
+          </svg>
+          <span class="progress-value">70%</span>
+        </div>
+        <div class="skill-name">UX Design</div>
+      </div>
+
+      <!-- 5. Prototyping -->
+      <div class="skill-card">
+        <div class="progress-ring-wrapper">
+          <svg class="progress-ring" viewBox="0 0 120 120">
+            <circle class="ring-bg" cx="60" cy="60" r="48"/>
+            <circle class="ring-fill" cx="60" cy="60" r="48" style="stroke-dashoffset: 90;"></circle>
+          </svg>
+          <span class="progress-value">70%</span>
+        </div>
+        <div class="skill-name">Prototyping</div>
+      </div>
+
+      <!-- 6. Box Model -->
+      <div class="skill-card">
+        <div class="progress-ring-wrapper">
+          <svg class="progress-ring" viewBox="0 0 120 120">
+            <circle class="ring-bg" cx="60" cy="60" r="48"/>
+            <circle class="ring-fill" cx="60" cy="60" r="48" style="stroke-dashoffset: 90;"></circle>
+          </svg>
+          <span class="progress-value">70%</span>
+        </div>
+        <div class="skill-name">Box Model</div>
+      </div>
+
+      <!-- 7. Business Model Canvas -->
+      <div class="skill-card">
+        <div class="progress-ring-wrapper">
+          <svg class="progress-ring" viewBox="0 0 120 120">
+            <circle class="ring-bg" cx="60" cy="60" r="48"/>
+            <circle class="ring-fill" cx="60" cy="60" r="48" style="stroke-dashoffset: 90;"></circle>
+          </svg>
+          <span class="progress-value">70%</span>
+        </div>
+        <div class="skill-name">Business Model<br>Canvas</div>
+      </div>
+
+      <!-- 8. Design Systems -->
+      <div class="skill-card">
+        <div class="progress-ring-wrapper">
+          <svg class="progress-ring" viewBox="0 0 120 120">
+            <circle class="ring-bg" cx="60" cy="60" r="48"/>
+            <circle class="ring-fill" cx="60" cy="60" r="48" style="stroke-dashoffset: 90;"></circle>
+          </svg>
+          <span class="progress-value">70%</span>
+        </div>
+        <div class="skill-name">Design Systems</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Me Section -->
+  <section id="about" class="about-section">
+    <div class="about-grid-overlay"></div>
+    <div class="about-container">
+      <h2 class="about-heading">About Me</h2>
+
+      <div class="about-cards-wrapper">
+        <div class="dots-grid dots-about-left"></div>
+        <div class="dots-grid dots-about-right"></div>
+
+        <div class="about-card-white">
+          <!-- Left Metric -->
+          <div class="metric-item">
+            <div class="metric-icon icon-purple">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M12 2l2.4 7.4h7.6l-6.2 4.5 2.4 7.4-6.2-4.5-6.2 4.5 2.4-7.4-6.2-4.5h7.6z"/>
+              </svg>
+            </div>
+            <div class="metric-num">100%</div>
+            <div class="metric-label">Responsibility</div>
+          </div>
+
+          <!-- Middle Colombian Pill Card -->
+          <div class="colombian-card">
+            <div class="colombian-flag-top">
+              <div class="flag-yellow"></div>
+              <div class="flag-blue"></div>
+              <div class="flag-red"></div>
+            </div>
+            <div class="colombian-card-body">
+              <div class="metric-num-white">100%</div>
+              <div class="metric-label-white">Colombian</div>
+            </div>
+          </div>
+
+          <!-- Right Metric -->
+          <div class="metric-item">
+            <div class="metric-icon icon-purple">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M19 4h-1V2h-2v2H8V2H6v2H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 16H5V10h14v10zm0-12H5V6h14v2z"/>
+              </svg>
+            </div>
+            <div class="metric-num">100%</div>
+            <div class="metric-label">Punctuality</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="about-wave-bottom">
+      <svg viewBox="0 0 1440 120" fill="none">
+        <path d="M0 60C320 120 420 0 720 60C1020 120 1120 0 1440 60V120H0V60Z" fill="#FAF5FF"/>
+      </svg>
+    </div>
+  </section>
+
+  <!-- Portfolio Section -->
+  <section id="portfolio" class="portfolio-section">
+    <div class="portfolio-container">
+      <div class="portfolio-header">
+        <h2 class="portfolio-title">
+          Portfolio
+          <svg class="title-underline" width="60" height="12" viewBox="0 0 60 12" fill="none">
+            <path d="M2 10C15 2 30 2 58 8" stroke="#7C3AED" stroke-width="3" stroke-linecap="round"/>
+          </svg>
+        </h2>
+      </div>
+
+      <div class="portfolio-grid">
+        <!-- Project 1 -->
+        <div class="project-card">
+          <div class="project-img-wrapper">
+            <div class="mockup-screen screen-1">
+              <div class="screen-content">
+                <h4>Experiencias Inolvidables</h4>
+              </div>
+            </div>
+          </div>
+          <div class="project-info">
+            <h3 class="project-title">Eventos Premium</h3>
+            <p class="project-tags">Elegante • Sello • Colores</p>
+          </div>
+        </div>
+
+        <!-- Project 2 -->
+        <div class="project-card">
+          <div class="project-img-wrapper">
+            <div class="mockup-screen screen-2">
+              <div class="screen-content">
+                <div class="avatar-circle"></div>
+                <div class="dash-widgets"></div>
+              </div>
+            </div>
+          </div>
+          <div class="project-info">
+            <h3 class="project-title">Mi Portal U</h3>
+            <p class="project-tags">Amigable • Dashboard • Simple</p>
+          </div>
+        </div>
+
+        <!-- Project 3 -->
+        <div class="project-card">
+          <div class="project-img-wrapper">
+            <div class="mockup-screen screen-3">
+              <div class="screen-content">
+                <h3>A&C</h3>
+              </div>
+            </div>
+          </div>
+          <div class="project-info">
+            <h3 class="project-title">A&C App</h3>
+            <p class="project-tags">Elegante • Sello • Colores</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer-section">
+    <div class="social-links">
+      <a href="#" class="social-icon" aria-label="Instagram">
+        <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+      </a>
+      <a href="#" class="social-icon" aria-label="Facebook">
+        <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24"><path d="M9 8H6v4h3v12h5V12h3.642L18 8h-4V6.333C14 5.374 14.5 5 15.5 5H18V0h-3.808C10.592 0 9 1.583 9 4.615V8z"/></svg>
+      </a>
+      <a href="#" class="social-icon" aria-label="LinkedIn">
+        <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24"><path d="M4.98 3.5c0 1.381-1.11 2.5-2.48 2.5s-2.48-1.119-2.48-2.5c0-1.38 1.11-2.5 2.48-2.5s2.48 1.12 2.48 2.5zm.02 4.5h-5v16h5v-16zm7.982 0h-4.968v16h4.969v-8.399c0-4.67 6.029-5.052 6.029 0v8.399h4.988v-10.131c0-7.88-8.922-7.593-11.018-3.714v-2.155z"/></svg>
+      </a>
+      <a href="#" class="social-icon" aria-label="Twitter">
+        <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24"><path d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.724-.951.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-3.179 0-5.515 2.966-4.797 6.045-4.091-.205-7.719-2.165-10.148-5.144-1.29 2.213-.669 5.108 1.523 6.574-.806-.026-1.566-.247-2.229-.616-.054 2.281 1.581 4.415 3.949 4.89-.693.188-1.452.232-2.224.084.626 1.956 2.444 3.379 4.6 3.419-2.07 1.623-4.678 2.348-7.29 2.04 2.179 1.397 4.768 2.212 7.548 2.212 9.142 0 14.307-7.721 13.995-14.646.962-.695 1.797-1.562 2.457-2.549z"/></svg>
+      </a>
+    </div>
+    <p class="copyright-text">Cristian David Muñoz Garzon @cristianmunozc © 2022</p>
+  </footer>
+
+</body>
+</html>
